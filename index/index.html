@@ -9,7 +9,7 @@
     <title>Caelus</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="container">
             <h1>Caelus</h1><br>
             <div class="div_button">
@@ -22,7 +22,13 @@
             </div>
             <br>
         </div>
-    </header>
+    </header> -->
+    <div id="header">
+        <img src="../imgs/logo-sFundo.png" alt="">
+        <h1>Palavras Cruzadas</h1>
+        <span>Venha descobrir seu nível de conhecimento em tecnologia!</span>
+        <a href="#div_game"><img src="../imgs/seta-para-baixo.png" alt="Instruções"></a>
+    </div>
 
     <article>
         <div class="container">
@@ -32,14 +38,25 @@
             <div id="div_game">
                 <br>
                 <div id="div_information">
-                    <h2>Intruções do Jogo</h2><br><br>
+                    <h2>Como jogar?</h2><br><br>
                     <p>
-                        Clique em "Começar o Jogo" para iniciar uma partida <br><br>
-                        Perguntas serão exibidas na parte inferior do quadro <br><br>
-                        Insira a sua resposta na caixa de texto e clique em "Verificar" para conferir a sua
-                        resposta<br><br>
-                        A partida acaba quando as 16 questões forem respondidas <br><br>
+                        - Clique em "Jogar" para iniciar uma partida. <br><br>
+                        - Responda as perguntas exibidas na parte superior da tela. <br><br>
+                        - Insira a sua resposta na caixa de texto e clique em "Verificar" para conferir a sua
+                        resposta.<br><br>
+                        - A partida acaba quando as 16 questões forem respondidas corretamente. <br><br>
+                        - A partida pode ser encerrada ao clicar no "X" vermelho na parte superior da tela.<br><br>
+                        - Fique atento a ortografia e a utilizar letras maiúsculas no início da palavra.<br><br>
                     </p>
+                    
+                </div>
+                <div class="div_button">
+                        <button class="button-start" id="bt_start" onclick="start()">
+                            Jogar
+                        </button>
+                        <button class="button" style="display:none" id="bt_destroyGame" onclick="destroyGrid()">
+                            Encerrar o Jogo
+                        </button>
                 </div>
                 <br>
                 <div id="div_canvasCruzada"></div>
@@ -58,12 +75,26 @@
     </article><br><br>
 
     <footer>
-        <div class="container"><br>
-            <p>Developed by Carlos Santana <br>
-                RA: 01201095 <br>
-                1ADS-A
-            </p>
+        <div id="div_creditos">
+            <div>
+                <p><b>Desenvolvido por</b> <br><br>
+                     Carlos Santana <br>
+                    RA: 01201095 
+                    1ADS-A
+                </p>
+            </div>
+            <div>
+                <p><b>Estilizado por</b> <br><br>
+                    Natália Russo <br>
+                    RA: 03231010
+                    1SIS-A <br><br>
+                    Paola Gomes <br>
+                    RA: 03231051
+                    1SIS-A
+                </p>
+            </div>
         </div>
+        <img src="../imgs/caelusB-sFundo.png" alt="">
     </footer>
 
 </body>
